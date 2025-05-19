@@ -12,7 +12,7 @@ This is a simple job application web application built with Flask. It allows use
 
 ## Screenshot
 
-![App Screenshot](static/screenshot.png)
+![App Screenshot](static/Screenshot.png)
 
 *Example: Job Application Form UI*
 
