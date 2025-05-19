@@ -1,5 +1,5 @@
 from datetime import datetime
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, flash
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -29,6 +29,7 @@ def index():
         form = Form(first_name=first_name, last_name=last_name, email=email, date=date_obj, occupation=occupation)
         db.session.add(form)
         db.session.commit()
+        flash("Your application was submitted successfully", "success")
 
     return render_template("index.html")
 
